@@ -13,7 +13,7 @@ window.addEventListener('dblclick',function(){
         var box = document.getElementById('question-list');
         if (box) {
             [].forEach.call(document.getElementsByClassName('option-list'), e => {e.children[0].children[0].checked=true});
-            document.getElementById('sub').click();
+            setTimeout("document.getElementById('sub').click()",10);
         }
     });
 
