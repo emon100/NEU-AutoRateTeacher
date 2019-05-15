@@ -12,7 +12,8 @@ window.addEventListener('dblclick',function(){
         console.log("oK!");
         var box = document.getElementById('question-list');
         if (box) {
-                [].forEach.call(document.getElementsByClassName('option-list'), e => {e.children[0].children[0].checked=true});
+            [].forEach.call(document.getElementsByClassName('option-list'), e => {e.children[0].children[0].checked=true});
+            document.getElementById('sub').click();
         }
     });
 
