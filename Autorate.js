@@ -13,8 +13,10 @@
     window.addEventListener('dblclick',function(){
         var box = document.getElementById('question-list');
         if (box) {
+                //选中每个问题的第一个单选框
                 [].forEach.call(document.getElementsByClassName('option-list'), e => {e.children[0].children[0].checked=true});
-                setTimeout(f=>{document.getElementById('sub').click()},1);
+                //点击提交按钮
+                setTimeout(f=>{document.getElementById('sub').click()},10);
         }
     });
 })();
